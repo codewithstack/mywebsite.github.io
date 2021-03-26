@@ -1,0 +1,258 @@
+/*--
+Author: AnyaWebSolution
+Author URL: http://anyawebsolution.com
+ --*/
+body,
+html {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    scroll-behavior: smooth;
+    min-height:200vh;
+}
+
+body a,
+.btn,
+button {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+    outline: none;
+}
+header,article,section,aside,footer{
+    display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+}
+
+p {
+    margin: 0;
+    color: #7c7c7c;
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.9em;
+    letter-spacing: 1px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+body a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+body img {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o- border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+}
+
+.clr {
+    color: #fff;
+}
+
+/* header */
+
+
+/* navbar part */
+.navbar{
+    min-height: 70px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar-brand{
+    font-size: 26px;
+}
+.navbar img{
+    width: auto;
+    height: 45px;
+    line-height: 50px;
+}
+.nav-item a{
+    font-size: 16px;
+}
+.navbar-default{
+    transition:500ms ease;
+}
+.navbar-default.scrolled{
+    background : rgb(21, 157, 206);
+}
+.megamenu .col-megamenu .title{
+    font-size: 20px;
+    color: rgb(21, 157, 206);
+    margin-bottom: 5%;
+}
+.megamenu .col-megamenu .list-unstyled li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    line-height: 28px;
+}
+/* navbar part */
+
+/* header */
+
+/* training course */
+#training{
+    padding: 5% 0;
+}
+#training h1{
+    margin-bottom: 2.5%;
+}
+#training .wrap{
+    padding: 2% 0;
+    display:flex ;
+    justify-content: space-between;
+}
+#training .wrap .box{
+    width: 100%;
+    padding: 8% 0;
+    box-shadow: 1px 1px 10px 2px rgb(214, 214, 214);
+    border-radius: 6px;
+}
+#training .wrap .box img{
+    margin: 2% 0 8% 0;
+    padding: 2%;
+}
+#training .wrap .box h5{
+    margin: 0 0 5% 0;
+}
+/* training course */
+
+/* services */
+#services{
+    padding: 5% 0;
+    background: rgba(245, 245, 245, 0.322);
+}
+#services h1{
+    margin-bottom: 2.5%;
+}
+#services .wrap{
+    padding: 2% 0;
+    display:flex ;
+    justify-content: space-between;
+}
+#services .wrap .box{
+    padding: 2% 0;
+    border-radius: 6px;
+}
+#services .wrap .box img{
+    margin: 2% 0 8% 0;
+    padding: 2%;
+}
+#services .wrap .box h5{
+    margin: 0 0 5% 0;
+}
+/* services */
+
+/* testimonial */
+#testimonial{
+    padding: 5% 0;
+    background: url('../images/back.png');
+    background-attachment: fixed;
+    background-position: right;
+}
+#testimonial h1{
+    margin-bottom: 5%;
+}
+#client-testimonial-carousel {
+    min-height: 200px;
+}
+.testi{
+    background: white;
+    color: black;
+    padding: 2% 0;
+    border-radius: 6px;
+}
+/* testimonial */
+
+/* footer */
+.footer{
+    padding: 5% 0 3% 0;
+}
+.footer h4{
+    margin-bottom: 8%;
+}
+.footer i{
+    color: rgb(66, 173, 245);
+}
+.footer .Links i{
+    color: white;
+}
+.footer .info{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+footer ul li{
+    line-height: 34px;
+}
+footer ul li a{
+    color: white;
+}
+.footer p{
+    color: white;
+}
+.footer .Links{
+    width: 100%;
+    margin: 5% 2% 0 2%;
+}
+.footer .Links .icons i{
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    padding: 3% 2.85%;
+}
+.footer .Links .icons .fa-facebook-f:hover{
+    color: rgb(13, 113, 207);
+}
+.footer .Links .icons .fa-twitter:hover{
+    color: rgb(13, 146, 207);
+}
+.footer .Links .icons .fa-instagram:hover{
+    color: rgb(228, 59, 144);
+}
+.footer .Links .icons .fa-youtube-play:hover{
+    color: rgb(192, 22, 45);
+}
+.footer .Links .icons .fa-linkedin:hover{
+    color: rgb(22, 152, 192);
+}
+/* footer */
+@media all and (max-width: 991px) {
+    #training .wrap .box{
+        margin: 8% 0;
+    }
+}
+@media all and (min-width: 992px) {
+    .navbar{ padding-top: 0; padding-bottom: 0;}
+    .navbar .has-megamenu{position:static!important;}
+    .navbar .megamenu{left:0; right:0; width:100%; padding:20px;  }
+    .navbar .nav-link{ padding-top:1rem; padding-bottom:1rem;  }
+}
+
