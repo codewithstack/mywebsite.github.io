@@ -83,6 +83,9 @@ body img {
 .navbar{
     min-height: 75px;
 }
+.navbar-nav span{
+    display: none;
+}
 .navbar-brand{
     font-size: 26px;
 }
@@ -447,10 +450,10 @@ footer ul li a{
 @media screen and (max-width: 766px)
 {
     .navbar .navbar-nav{
-        position: fixed;
-        height: 100vh;
+        position: relative;
+        height: 70vh;
+        text-align: center;
         width: 100%;
-        max-width: 350px;
         background: #242526;
         display: block;
         top: 0;
@@ -459,8 +462,14 @@ footer ul li a{
         padding: 50px 10px;
         z-index: 1;
         box-shadow: 0 15px 15px rgba(0,0,0,0.15);
-        overflow: scroll;
-        transition: all 0.8s ease;
+        overflow-y: scroll;
+    }
+    .navbar-nav span{
+        display: block;
+        color: white;
+        position: absolute;
+        top: 15px;
+        left: 92%;
     }
     .nav-link{
         color: white;
