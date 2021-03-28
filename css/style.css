@@ -150,10 +150,11 @@ body img {
 .carousel-caption{
     text-align: left;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 2%;
 }
 .carousel-caption h5{
+    width: 60%;
     font-size: 2.5rem;
     color: black;
 }
@@ -533,10 +534,52 @@ footer ul li a{
 }
 @media screen and (max-width: 468px)
 {
+    .carousel-caption{
+        text-align: left;
+        position: absolute;
+        top: 32%;
+        left: 2%;
+    }
     .carousel-caption h5{
         width: 70%;
-        font-size: 0.2rem;
+        font-size: 1.2rem;
         color: black;
+    }
+    .carousel-item img{
+        height: 240px;
+    }
+    #training .box h5{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    #services .box h5{
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 468px) and (max-width: 766px)
+{
+    .carousel-caption{
+        text-align: left;
+        position: absolute;
+        top: 35%;
+        left: 2%;
+    }
+    .carousel-caption h5{
+        width: 60%;
+        font-size: 1.5rem;
+        color: black;
+    }
+    .carousel-item img{
+        height: 320px;
+    }
+    #training .box h5{
+        font-size: 17px;
+        font-weight: 600;
+    }
+    #services .box h5{
+        font-size: 17px;
+        font-weight: 600;
     }
 }
 @media screen and (max-width: 766px)
@@ -614,29 +657,10 @@ footer ul li a{
         height: 180px;
         border-radius: 0px;
     }
-    .carousel-caption{
-        text-align: left;
-        position: absolute;
-        top: 28%;
-        left: 2%;
-    }
-    .carousel-caption h5{
-        width: 65%;
-        font-size: 1.15rem;
-        color: black;
-    }
     #services .wrap2 .box img{
         width: 28%;
         margin: 2% 0 8% 0;
         padding: 2%;
-    }
-    #training .box h5{
-        font-size: 12px;
-        font-weight: 600;
-    }
-    #services .box h5{
-        font-size: 12px;
-        font-weight: 600;
     }
     .testi{
         min-height: 65vh;
