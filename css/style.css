@@ -295,17 +295,20 @@ body img {
     justify-content: space-between;
 }
 #services .wrap2 .box{
+    width: 100%;
     padding: 8% 0;
+    box-shadow: 1px 1px 10px 2px rgb(162, 162, 162);
     border-radius: 6px;
+    transition: all 0.3s ease;
 }
-#services .wrap2 .box img{
+#services .wrap2 .box i{
     margin: 2% 0 8% 0;
-    padding: 2%;
+    padding: 6% 8%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 #services .wrap2 .box h5{
     margin: 0 0 5% 0;
 }
-
 /* services */
 
 /* testimonial */
@@ -483,6 +486,9 @@ footer ul li a{
     #training .wrap .box{
         margin: 8% 0;
     }
+    #services .wrap2 .box{
+        margin: 8% 0;
+    }
 }
 @media all and (min-width: 992px) {
     .navbar{ padding-top: 0; padding-bottom: 0;}
@@ -523,6 +529,14 @@ footer ul li a{
     #about-us p{
         font-size: 15.2px;
         line-height: 26px;
+    }
+}
+@media screen and (max-width: 468px)
+{
+    .carousel-caption h5{
+        width: 70%;
+        font-size: 0.2rem;
+        color: black;
     }
 }
 @media screen and (max-width: 766px)
@@ -600,8 +614,14 @@ footer ul li a{
         height: 180px;
         border-radius: 0px;
     }
+    .carousel-caption{
+        text-align: left;
+        position: absolute;
+        top: 28%;
+        left: 2%;
+    }
     .carousel-caption h5{
-        width: 70%;
+        width: 65%;
         font-size: 1.15rem;
         color: black;
     }
@@ -611,7 +631,11 @@ footer ul li a{
         padding: 2%;
     }
     #training .box h5{
-        font-size: 16px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    #services .box h5{
+        font-size: 12px;
         font-weight: 600;
     }
     .testi{
@@ -622,5 +646,14 @@ footer ul li a{
     #about-us p{
         font-size: 15.2px;
         line-height: 28px;
+    }
+    #training h1{
+        font-size: 28px;
+    }
+    #services h1{
+        font-size: 28px;
+    }
+    #testimonial h1{
+        font-size: 28px;
     }
 }
