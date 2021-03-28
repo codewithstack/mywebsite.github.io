@@ -173,13 +173,14 @@ body img {
 #training .wrap .box{
     width: 100%;
     padding: 8% 0;
-    box-shadow: 1px 1px 10px 2px rgb(214, 214, 214);
+    box-shadow: 1px 1px 10px 2px rgb(162, 162, 162);
     border-radius: 6px;
     transition: all 0.3s ease;
 }
-#training .wrap .box span{
+#training .wrap .box i{
     margin: 2% 0 8% 0;
-    padding: 6%;
+    padding: 6% 8%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 #training .wrap .box h5{
     margin: 0 0 5% 0;
@@ -187,64 +188,124 @@ body img {
 .wrap .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
     color: black;
 }
-.wrap .box1:hover {
+.wrap .box:hover h5{
+    color: white;
+}
+.wrap .box1 i{
     background-color: #554749;
     color: white;
 }
-.wrap .box2:hover{
+.wrap .box1:hover i{
+    color: #554749;
+    background-color: white;
+}
+.wrap .box2 i{
     background-color: #443e5a;
     color: white;
 }
-.wrap .box3:hover{
+.wrap .box2:hover i{
+    color: #443e5a;
+    background-color: white;
+}
+.wrap .box3 i{
     background-color: #263141;
     color: white;
 }
-.wrap .box4:hover{
+.wrap .box3:hover i{
+    color: #263141;
+    background-color: white;
+}
+.wrap .box4 i{
     background-color: #1f4139;
     color: white;
 }
-.wrap .box5:hover{
+.wrap .box4:hover i{
+    color: #1f4139;
+    background-color: white;
+}
+.wrap .box5 i{
     background-color: #19351e;
     color: white;
 }
-.wrap .box6:hover{
+.wrap .box5:hover i{
+    color: #19351e;
+    background-color: white;
+}
+.wrap .box6 i{
     background-color: #5c2d56;
     color: white;
 }
-.wrap .box7:hover{
+.wrap .box6:hover i{
+    color: #5c2d56;
+    background-color: white;
+}
+.wrap .box7 i{
     background-color: #494e28;
     color: white;
 }
-.wrap .box8:hover{
+.wrap .box7:hover i{
+    color: #494e28;
+    background-color: white;
+}
+.wrap .box8 i{
     background-color: #4e2429;
     color: white;
+}
+.wrap .box8:hover i{
+    color: #4e2429;
+    background-color: white;
+}
+.wrap .box1:hover {
+    background-color: #554749;
+}
+.wrap .box2:hover{
+    background-color: #443e5a;
+}
+.wrap .box3:hover{
+    background-color: #263141;
+}
+.wrap .box4:hover{
+    background-color: #1f4139;
+}
+.wrap .box5:hover{
+    background-color: #19351e;
+}
+.wrap .box6:hover{
+    background-color: #5c2d56;
+}
+.wrap .box7:hover{
+    background-color: #494e28;
+}
+.wrap .box8:hover{
+    background-color: #4e2429;
 }
 /* training course */
 
 /* services */
 #services{
-    padding: 5% 0;
+    padding: 5% 0 8% 0;
     background: rgba(245, 245, 245, 0.322);
 }
 #services h1{
     margin-bottom: 2.5%;
 }
-#services .wrap{
+#services .wrap2{
     padding: 2% 0;
     display:flex ;
     justify-content: space-between;
 }
-#services .wrap .box{
-    padding: 2% 0;
+#services .wrap2 .box{
+    padding: 8% 0;
     border-radius: 6px;
 }
-#services .wrap .box img{
+#services .wrap2 .box img{
     margin: 2% 0 8% 0;
     padding: 2%;
 }
-#services .wrap .box h5{
+#services .wrap2 .box h5{
     margin: 0 0 5% 0;
 }
+
 /* services */
 
 /* testimonial */
@@ -265,6 +326,11 @@ body img {
     color: black;
     padding: 2% 0;
     border-radius: 6px;
+}
+#testimonial img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 /* testimonial */
 
@@ -439,6 +505,11 @@ footer ul li a{
         font-size: 1.6rem;
         color: black;
     }
+    #services .wrap2 .box img{
+        width: 35%;
+        margin: 2% 0 8% 0;
+        padding: 2%;
+    }
 }
 @media screen and (max-width: 575px)
 {
@@ -447,64 +518,30 @@ footer ul li a{
         padding: 3% 2.85%;
     }
 }
+@media screen and (min-width: 770px) and (max-width: 1200px)
+{
+    #about-us p{
+        font-size: 15.2px;
+        line-height: 26px;
+    }
+}
 @media screen and (max-width: 766px)
 {
-    .navbar .navbar-nav{
+    .navbar-nav{
         position: relative;
-        height: 70vh;
         text-align: center;
-        width: 100%;
-        background: #242526;
-        display: block;
-        top: 0;
-        left: 0;
-        line-height: 50px;
-        padding: 50px 10px;
-        z-index: 1;
-        box-shadow: 0 15px 15px rgba(0,0,0,0.15);
-        overflow-y: scroll;
     }
-    .navbar-nav span{
-        display: block;
-        color: white;
-        position: absolute;
-        top: 15px;
-        left: 92%;
-    }
-    .nav-link{
-        color: white;
-    }
-    .nav-link:hover{
-        color: rgb(40, 164, 221);
-    }
-    .navbar-nav li{
-        margin: 15px 10px;
-    }
-    .navbar-nav li a{
-        padding: 0 20px;
-        display: block;
-        font-size: 20px;
-        line-height: 50px;
-    }
-    .navbar-nav .dropdown-menu{
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        top: 65px;
-        padding-left: 20px;
-        width: 100%;
-    }
-    .navbar-nav .dropdown-menu li{
-        margin: 0;
-    }
-    .navbar-nav .dropdown-menu li a{
+    .navbar-nav .nav-link{
+        color: black;
         font-size: 18px;
-        border-radius: 5px;
+    }
+    .navbar-nav .nav-link:hover{
+        background-color: rgb(213, 203, 203);
     }
     .menutraining{
         position: static;
         top: 65px;
-        background: #242526;
+        background: white;
         width: 100%;
         opacity: 1;
         visibility: visible;
@@ -519,18 +556,18 @@ footer ul li a{
         border-top: 1px solid rgba(255,255,255,0.08);   
     }
     .menutraining .content .row li i{
-        display: none;
+        display: none
     }
     .menutraining .content .row li a{
         width: 100%;
-        color: white;
+        color: black;
         line-height: 30px;
         padding: 0;
     }
     .menuservice{
         position: static;
         top: 65px;
-        background: #242526;
+        background: white;
         width: 100%;
         opacity: 1;
         visibility: visible;
@@ -549,7 +586,7 @@ footer ul li a{
     }
     .menuservice .content .row li a{
         width: 100%;
-        color: white;
+        color: black;
         line-height: 30px;
         padding: 0;
     }
@@ -565,7 +602,25 @@ footer ul li a{
     }
     .carousel-caption h5{
         width: 70%;
-        font-size: 0.9rem;
+        font-size: 1.15rem;
         color: black;
+    }
+    #services .wrap2 .box img{
+        width: 28%;
+        margin: 2% 0 8% 0;
+        padding: 2%;
+    }
+    #training .box h5{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .testi{
+        min-height: 65vh;
+        padding: 0 0 5% 0;
+        border-radius: 6px;
+    }
+    #about-us p{
+        font-size: 15.2px;
+        line-height: 28px;
     }
 }
